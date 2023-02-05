@@ -1,9 +1,10 @@
+# 90ml lemon, 30 ml lime
 Name: A True Amaretto Sour
 Type: Alcoholic
 Cathegory: Cocktail
 Glass: Old-fashioned glass
 Ingredients: ['Amaretto', 'Lemon', 'Ice', 'Maraschino cherry']
-Measures: ['1 jigger ', 'Juice of 1/2 ', '\n']
+Measures: ['44 ml ', '45 ml ']
 Instructions: Rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good "frosted" rim. Shake a jigger of Amaretto with the juice of 1/2 a lemon. Strain into glass and add ice. Garnish with a Marachino Cherry.
 Url: http://www.thecocktaildb.com/images/media/drink/rptuxy1472669372.jpg
 
@@ -12,8 +13,8 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Old-fashioned glass
 Ingredients: ['Amaretto', 'Lime']
-Measures: ['1 1/2 oz ', '1 ']
-Instructions: Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve. (A wedge of lemon may be substituted for lime, if preferred.)
+Measures: ['45 ml ']
+Instructions: Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg
 
 Name: Amaretto Shake
@@ -21,7 +22,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Collins Glass
 Ingredients: ['Chocolate ice-cream', 'Brandy', 'Amaretto']
-Measures: ['2 scoops ', '2 oz ', '2 oz ']
+Measures: ['2 scoops ', '60 ml ', '60 ml ']
 Instructions: Combine all ingredients in a blender and blend at high speed until smooth. Serve in chilled glass garnished with bittersweet chocolate shavings.
 Url: http://www.thecocktaildb.com/images/media/drink/xk79al1493069655.jpg
 
@@ -30,7 +31,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Champagne flute
 Ingredients: ['Light rum', 'Triple sec', 'Banana', 'Lime juice', 'Sugar', 'Cherry']
-Measures: ['1 1/2 oz ', '1 tblsp ', '1 ', '1 1/2 oz ', '1 tsp ', '1 ']
+Measures: ['45 ml ', '15 ml ', '1 ', '45 ml ', '1 tsp ', '1 ']
 Instructions: Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.
 Url: http://www.thecocktaildb.com/images/media/drink/k1xatq1504389300.jpg
 
@@ -39,7 +40,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Brandy', 'Light rum', 'Triple sec', 'Lemon juice']
-Measures: ['1 oz ', '1 oz ', '1 oz ', '1 oz ']
+Measures: ['30 ml ', '30 ml ', '30 ml ', '30 ml ']
 Instructions: Pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass.
 Url: http://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg
 
@@ -48,7 +49,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Light rum', 'Brandy', 'Triple sec', 'Lime']
-Measures: ['3/4 oz ', '3/4 oz ', '3/4 oz ', 'Juice of 1/2 ']
+Measures: ['22.5 ml ', '22.5 ml ', '22.5 ml ', '15 ml ']
 Instructions: Shake all ingredients with ice, strain into a cocktail glass, and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg
 
@@ -57,7 +58,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Whiskey sour glass
 Ingredients: ['Brandy', 'Lemon', 'Powdered sugar', 'Lemon', 'Cherry']
-Measures: ['2 oz ', 'Juice of 1/2 ', '1/2 tsp ', '1/2 slice ', '1 ']
+Measures: ['60 ml ', '45 ml ', '1/2 tsp ', '1/2 slice ', '1 ']
 Instructions: Shake brandy, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with the lemon slice, top with the cherry, and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/tu0mts1504366540.jpg
 
@@ -66,7 +67,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Collins Glass
 Ingredients: ['Lime', 'Sugar', 'White rum', 'Ice']
-Measures: ['2 ', '2 tblsp ', '2-3 oz ', 'crushed ']
+Measures: ['60 ml ', '2 tblsp ', '75 ml ', 'crushed ']
 Instructions: Same as Caipirinha but instead of cachaca you add WHITE RUM. It's great!!!!!!!!
 Url: http://www.thecocktaildb.com/images/media/drink/yd47111503565515.jpg
 
@@ -75,7 +76,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Brandy', 'Triple sec', 'Lemon juice']
-Measures: ['2 oz ', '1/2 oz ', '1 tblsp ']
+Measures: ['60 ml ', '15 ml ', '1 tblsp ']
 Instructions: In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.
 Url: http://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg
 
@@ -93,7 +94,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Light rum', 'Lime', 'Powdered sugar']
-Measures: ['1 1/2 oz ', 'Juice of 1/2 ', '1 tsp ']
+Measures: ['45 ml ', '15 ml ', '1 tsp ']
 Instructions: Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.
 Url: http://www.thecocktaildb.com/images/media/drink/usuuur1439906797.jpg
 
@@ -102,7 +103,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Champagne flute
 Ingredients: ['Light rum', 'Triple sec', 'Lime juice', 'Sugar', 'Cherry', 'Ice']
-Measures: ['1 1/2 oz ', '1 tblsp ', '1 1/2 oz ', '1 tsp ', '1 ', '1 cup crushed ']
+Measures: ['45 ml ', '15 ml ', '45 ml ', '1 tsp ', '1 ', '1 cup crushed ']
 Instructions: Combine all ingredients (except for the cherry) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm. Pour contents into a champagne flute, top with the cherry, and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/7oyrj91504884412.jpg
 
@@ -111,7 +112,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Old-fashioned glass
 Ingredients: ['Light rum', 'Lime juice', 'Mint', 'Sugar']
-Measures: ['2 oz ', '1 tblsp ', '6 ', '1 tsp ']
+Measures: ['60 ml ', '15 ml ', '6 ', '1 tsp ']
 Instructions: Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into an old-fashioned glass and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/jrhn1q1504884469.jpg
 
@@ -120,7 +121,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Champagne flute
 Ingredients: ['Light rum', 'Pineapple', 'Lime juice', 'Sugar']
-Measures: ['1 1/2 oz ', '4 chunks ', '1 tblsp ', '1/2 tsp ']
+Measures: ['45 ml ', '4 chunks ', '15 ml ', '1/2 tsp ']
 Instructions: Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into a champagne flute and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/j2mqsb1504736097.jpg
 
@@ -129,7 +130,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Brandy', 'Triple sec', 'Lemon']
-Measures: ['1 oz ', '1/2 oz ', 'Juice of 1/4 ']
+Measures: ['30 ml ', '15 ml ', '22.5 ml']
 Instructions: Shake all ingredients with ice, strain into a cocktail glass, and serve.
 Url: http://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg
 
@@ -138,6 +139,6 @@ Type: Alcoholic
 Cathegory: Cocktail
 Glass: Old-fashioned glass
 Ingredients: ['Amaretto', 'Rum', 'Kool-Aid']
-Measures: ['2 oz ', '2 oz ', '4 oz Grape ']
+Measures: ['60 ml ', '60 ml ', '120 ml Grape ']
 Instructions: Mix Kool-Aid to taste then add Rum and ammaretto. shake well to disolve the sugar in the Kool-Aid... serve cold
 Url: http://www.thecocktaildb.com/images/media/drink/1sqm7n1485620312.jpg

@@ -1,0 +1,98 @@
+<Mixer>:
+    MDBoxLayout:
+        spacing: "25dp"
+        padding: "15dp"
+        orientation: 'vertical'
+
+        TitleLabel:
+            text: 'Mix your drink'
+            halign: 'center'
+
+        MDCard:
+            size_hint: 0.6, 0.8
+            elevated: "10dp"
+            spacing: "15sp"
+            padding: "15sp"
+            md_bg_color: "#eeeee4"
+
+            MDStackLayout:
+                orientation: 'lr-tb'
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'Your drink'
+                AnchorLayout:
+                    size_hint: 0.7, 0.1
+                    anchor_y: 'center'
+                    MDProgressBar:
+                        id: drinkBar
+                        color: app.theme_cls.accent_color
+                        size_hint: 0.8, 0.3
+                    #valign: 'center'
+                Widget:
+                    size_hint: 1,0.1
+
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'Amaretto'
+                MDSlider
+                    size_hint: 0.7, 0.1
+                    hint: True
+                    id: amaretto
+                    on_value_normalized:
+                        root.update(self.value, self.name)
+
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'Brandy'
+                MDSlider
+                    size_hint: 0.7, 0.1
+                    hint: True
+                    id: brandy
+                    on_value_normalized:
+                        root.update(self.value, self.name)
+
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'White rum'
+                MDSlider
+                    size_hint: 0.7, 0.1
+                    hint: True
+                    id: rum
+                    on_value_normalized:
+                        root.update(self.value, self.name)
+
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'Triple sec'
+                MDSlider
+                    size_hint: 0.7, 0.1
+                    hint: True
+                    id: triple
+                    on_value_normalized:
+                        root.update(self.value, self.name)
+
+                BigLabel:
+                    size_hint: 0.2, 0.1
+                    valign: 'center'
+                    text: 'Lime juice'
+                MDSlider
+                    size_hint: 0.7, 0.1
+                    hint: True
+                    id: lime
+                    on_value_normalized:
+                        root.update(self.value, self.name)
+
+
+        MDBoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, 0.07
+            spacing: "20sp"
+            Widget:
+            MDFillRoundFlatButton:
+                text: 'Create'
+            Widget:

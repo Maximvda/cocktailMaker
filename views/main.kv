@@ -1,5 +1,6 @@
 #:include views/views.kv
 #:include views/selector.kv
+#:include views/mixer.kv
 MDScreen:
     id: main
     # this will create a space navigation bottom
@@ -8,8 +9,15 @@ MDScreen:
         # this will create a navigation button on the bottom of screen
         MDBottomNavigationItem:
             name: "selector"
-            text: "Selector"
-            icon: "connection"
+            text: "Create"
+            icon: "glass-cocktail"
 
             Selector:
                 id: selector
+        MDBottomNavigationItem:
+            name: "mixer"
+            text: "Mix"
+            icon: "tune"
+
+            Mixer:
+                id: mixer
