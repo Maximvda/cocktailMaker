@@ -1,0 +1,98 @@
+<Selector>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        spacing: "25dp"
+        padding: "15dp"
+        TitleLabel:
+            halign: 'center'
+            text: "Cocktail maker"
+        Carousel:
+            id: mycarousel
+            size_hint: 0.75, 0.7
+            pos_hint: {'x': .125, 'y': .2}
+            Cocktail:
+                id: cocktail_1
+            Cocktail:
+                id: cocktail_2
+            Cocktail:
+                id: cocktail_3
+            Cocktail:
+                id: cocktail_4
+            Cocktail:
+                id: cocktail_5
+            Cocktail:
+                id: cocktail_6
+            Cocktail:
+                id: cocktail_7
+            Cocktail:
+                id: cocktail_8
+            Cocktail:
+                id: cocktail_9
+            Cocktail:
+                id: cocktail_10
+            Cocktail:
+                id: cocktail_11
+            Cocktail:
+                id: cocktail_12
+            Cocktail:
+                id: cocktail_13
+            Cocktail:
+                id: cocktail_14
+            Cocktail:
+                id: cocktail_15
+            Cocktail:
+                id: cocktail_16
+        MDBoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, 0.07
+            spacing: "20sp"
+            Widget:
+            MDFillRoundFlatButton:
+                text: 'Random'
+                on_release:
+                    root.randomise()
+            MDFillRoundFlatButton:
+                text: 'Create'
+            Widget:
+        Widget:
+            size_hint: 1, 0.03
+
+
+
+<Cocktail>
+    padding: 4
+    size_hint: 1, 1
+    #size: "350dp", "130dp"
+    elevated: "10dp"
+    md_bg_color: "#eeeee4"
+
+    MDStackLayout:
+        spacing: "9sp"
+        padding: "15dp", "10dp"
+        #orientation: 'vertical'
+        BigLabel:
+            padding: "0dp", "25dp"
+            id: lbl_title
+        AsyncImage:
+            id: image
+            #size_hint_y: 0.4
+            size_hint: None, None
+            size: "200dp", "200dp"
+        NormalLabel:
+            size_hint: None, None
+            valign: "top"
+            size: "260dp", "300dp"
+            id: lbl_all
+        Widget:
+#        NormalLabel:
+#            id: lbl_glass
+#            height: "20sp"
+#        NormalLabel:
+#            valign: 'top'
+#            id: lbl_ingredients
+#            height: "20sp"
+#        NormalLabel:
+#            id: lbl_quantities
+#        NormalLabel:
+#            id: lbl_instructions
+#            height: "75sp"

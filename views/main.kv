@@ -1,0 +1,15 @@
+#:include views/views.kv
+#:include views/selector.kv
+MDScreen:
+    id: main
+    # this will create a space navigation bottom
+    MDBottomNavigation:
+        id: navigation
+        # this will create a navigation button on the bottom of screen
+        MDBottomNavigationItem:
+            name: "selector"
+            text: "Selector"
+            icon: "connection"
+
+            Selector:
+                id: selector

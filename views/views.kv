@@ -1,0 +1,74 @@
+<TitleLabel>:
+    bold: True
+    font_size: "29sp"
+    height: "29sp"
+    size_hint_y: None
+
+<NormalLabel>:
+    size_hint_y: None
+    font_size: "15sp"
+    height: "25sp"
+    allow_selection: True
+    allow_copy: True
+
+<BigLabel>:
+    size_hint_y: None
+    height: "25sp"
+    font_size: "18sp"
+    bold: True
+
+<ConfirmPopup>:
+    cols:1
+	Label:
+		text: root.text
+	GridLayout:
+		cols: 2
+		size_hint_y: None
+		height: '44sp'
+		Button:
+			text: 'Yes'
+			on_release: root.dispatch('on_answer','yes')
+		Button:
+			text: 'No'
+			on_release: root.dispatch('on_answer', 'no')
+
+<ListPresenter>
+    spacing: "24sp"
+
+<ScrollList>
+    MDList:
+        id: list
+        spacing: "10dp"
+
+<InputDialog>
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "65dp"
+    MDTextField:
+        id: entry_dialog
+        hint_text: root.hint_text
+
+<EntryPopup>:
+    cols: 1
+    Label:
+        text: root.text
+    TextInput:
+        id: entry_popup
+        size_hint_x: 0.7
+        hint_text: root.entry_text
+	GridLayout:
+		cols: 2
+		size_hint_y: None
+		height: '44sp'
+		Button:
+			text: 'Yes'
+			on_release: root.dispatch('on_answer', entry_popup.text)
+            disabled: True if entry_popup.text == "" else False
+		Button:
+			text: 'No'
+			on_release: root.dispatch('on_answer', False)
+
+<LabelValue>:
+    markup: True
+    text: f"[b]{root.lbl_text}[/b] {root.value_text}"
