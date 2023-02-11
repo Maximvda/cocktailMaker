@@ -75,7 +75,7 @@ Type: Alcoholic
 Cathegory: Ordinary Drink
 Glass: Cocktail glass
 Ingredients: ['Brandy', 'Triple sec', 'Lemon juice']
-Measures: ['60 ml ', '15 ml ', '1 tblsp ']
+Measures: ['60 ml ', '15 ml ', '5 ml ']
 Instructions: In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.
 Url: http://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg
 

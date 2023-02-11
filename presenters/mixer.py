@@ -26,6 +26,15 @@ class Mixer(Presenter):
             self.ids[self._myIds[id]].value = self.values[id]
         self.total = sum(self.values)
 
+    def create(self):
+        self.app.model.makeCustom([
+            int(self.ids.amaretto.value),
+            int(self.ids.lime.value),
+            int(self.ids.brandy.value),
+            int(self.ids.rum.value),
+            int(self.ids.triple.value),
+        ])
+
     @property
     def total(self):
         return self._total

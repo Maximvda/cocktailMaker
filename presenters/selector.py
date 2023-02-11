@@ -35,11 +35,20 @@ class Selector(Presenter):
         for i in range(10+random.randint(0, 20)):
             time.sleep(0.02*i)
             self._next()
+        time.sleep(0.3)
+        self.create()
+
+    def create(self):
+        self.app.model.makeCocktail(self.cocktail)
 
     @mainthread
     def _next(self):
         self.currentIndex += 1
         self.ids.mycarousel.index = self.currentIndex
+
+    @property
+    def cocktail(self):
+        return self.ids.mycarousel.index
 
 
 

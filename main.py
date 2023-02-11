@@ -2,6 +2,7 @@ import os
 #os.environ["KIVY_NO_CONSOLELOG"] = "1"
 import sys
 import logging
+from models.model import Model
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.resources import resource_add_path
@@ -24,6 +25,7 @@ class Main(MDApp):
     def on_start(self):
         self.root.ids.selector.init()
         self.root.ids.mixer.init()
+        self.model = Model()
 
 if __name__ == "__main__":
     if hasattr(sys, '_MEIPASS'):
