@@ -85,33 +85,33 @@ class Mqtt(mqtt.Client):
             res = self.unsubscribe(f"{topic}{MAC}")
         return res
 
-    def cocktailRequest(self, MAC, cocktail):
+    def cocktailRequest(self, cocktail):
         request = wificonnect_pb2.Command()
         request.cocktail.cocktail = cocktail+1
-        self._sendCommand(MAC, request)
+        self._sendCommand(request)
 
-    def customCocktail(self, MAC, amounts):
+    def customCocktail(self, amounts):
         request = wificonnect_pb2.Command()
         request.cocktail.amaretto = amounts[0]
         request.cocktail.lime = amounts[1]
         request.cocktail.brandy = amounts[2]
         request.cocktail.rum = amounts[3]
         request.cocktail.triple_sec = amounts[4]
-        self._sendCommand(MAC, request)
+        self._sendCommand(request)
 
-    def upgrade(self, MAC, serial, version, file):
+    def upgrade(self, serial, version, file):
         self._logger.info(f"Upgrading: {serial}  to version: {version}")
         command = wificonnect_pb2.Command()
         command.upgrade.deviceType = int(serial[0:4])
         if serial.startswith("5130") or serial.startswith("5110"):
-            command.upgrade.firmWareMajorVersion = int(version[0])
-            command.upgrade.firmWareMinorVersion = int(version[1])
+            command.upgrade.firmWareMajorVersion = 1
+            command.upgrade.firmWareMinorVersion = 0
         else:
             command.upgrade.serialNumbers.extend([int(serial[4:])])
         command.upgrade.imageSize = int(os.path.getsize(file)) # in bytes
         with open(file, 'rb') as f:
             data = f.read()
-        self._sendUpgrade(MAC, command, data)
+        self._sendUpgrade(command, data)
 
     # Queue the incomming messages for decoding
     def on_message(self, _Client, _userdata, message):
@@ -126,52 +126,12 @@ class Mqtt(mqtt.Client):
     def _decodeMessage(self, message):
         (topic, mac) = message.topic.split("/")[-2:]
         payload = message.payload
-        # No callback function so we don't have to decode message
-        if not hasattr(self, f"cb_{mac}"):
-            return
-        # Decode the message with the protobuf
-        if topic in ['long', 'short']:
-            self._measurement.ParseFromString(payload)
-            value = copy.copy(self._measurement)
-        elif topic == 'debug':
-            value = payload.decode()
-        elif topic == 'status':
-            self._status.ParseFromString(payload)
-            value = copy.copy(self._status)
-        elif topic == 'out':
-            next_pos, pos = 0, 0
-            try:
-                while pos < len(payload):
-                    next_pos, pos = _DecodeVarint32(payload, pos)
-                    msg_buf = payload[pos:pos + next_pos]
-                    pos += next_pos
-                    self._command.ParseFromString(msg_buf)
-                    if self._command.HasField("modbusWrite"):
-                        logging.getLogger('Out modbus').info(f"{self._command}")
-                    else:
-                        logging.getLogger('Out').info(f"{self._command}")
-                return
-            except:
-                self._logger.debug(f"Couldn't decode: {payload}")
-                return
-        elif topic == 'event':
-            value = payload
-        else:
-            logging.getLogger("Mqtt error").warning(f"Couldn't decode the following: {msg.topic}/{msg.payload}")
-            return
+        self._logger.info(message)
 
-        # Log the decoded message
-        logging.getLogger(topic.capitalize()).info(f"{value}")
-        # Execute the callback function
-        eval(f"self.cb_{mac}")(topic, value)
-
-    def sendStatus(self, MAC, status):
-        self.publish(f"inf/in/status/{MAC}", status.SerializeToString(), qos=0, retain=False)
-
-    def _sendCommand(self, MAC, command, topic="inf/out"):
+    def _sendCommand(self, command, topic="inf/out"):
         self.publish(f"espWall/command", command.SerializeToString(), qos=0, retain=False)
 
-    def _sendUpgrade(self, MAC, command, data):
+    def _sendUpgrade(self, command, data):
         encodedCommand = _VarintBytes(command.ByteSize()) + command.SerializeToString()
         encodedCommand += data
-        self.publish(f"inf/out/{MAC}", encodedCommand, qos=1, retain=False)
+        self.publish(f"espWall/command", encodedCommand, qos=1, retain=False)

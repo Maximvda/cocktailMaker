@@ -35,6 +35,9 @@ class Mixer(Presenter):
             int(self.ids.triple.value),
         ])
 
+    def calibrate(self):
+        self.app.model.calibrate()
+
     @property
     def total(self):
         return self._total

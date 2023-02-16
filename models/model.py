@@ -4,12 +4,18 @@ import models.logger
 
 class Model:
     def __init__(self):
-        self.mqtt = Mqtt('192.168.0.10')
+        self.mqtt = Mqtt('siemieserver.duckdns.org')
+        time.sleep(3)
+        self.upgrade()
 
     def makeCocktail(self, number):
-        print(number)
-        self.mqtt.cocktailRequest("MAC", number)
+        self.mqtt.cocktailRequest(number)
 
     def makeCustom(self, amounts):
-        print(amounts)
-        self.mqtt.customCocktail("MAC", amounts)
+        self.mqtt.customCocktail(amounts)
+
+    def upgrade(self):
+        self.mqtt.upgrade('5130026339', "3.20", "wallLed.bin")
+
+    def calibrate(self):
+        self.mqtt.cocktailRequest(17)
