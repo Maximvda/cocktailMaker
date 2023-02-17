@@ -5,8 +5,6 @@ import models.logger
 class Model:
     def __init__(self):
         self.mqtt = Mqtt('siemieserver.duckdns.org')
-        time.sleep(3)
-        self.upgrade()
 
     def makeCocktail(self, number):
         self.mqtt.cocktailRequest(number)

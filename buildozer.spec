@@ -38,7 +38,7 @@ version = 0.1
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 #requirements = python3,kivy==2.1.0,kivymd==1.2.0,paho-mqtt
-requirements = python3, kivy, kivymd, paho-mqtt
+requirements = python3, kivy, kivymd, paho-mqtt, protobuf
 
 
 # (str) Custom source folders for requirements
