@@ -16,4 +16,5 @@ class Model:
         self.mqtt.upgrade('5130026339', "3.20", "wallLed.bin")
 
     def calibrate(self):
-        self.mqtt.cocktailRequest(17)
+        print("Cocktail request 17")
+        self.mqtt.cocktailRequest(16)
